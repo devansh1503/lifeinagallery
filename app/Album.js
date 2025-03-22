@@ -24,7 +24,7 @@ const Album = ({item}) => {
             item.images.map((item, key) => {
                 return (
                     <SwiperSlide>
-                        <div className="slide-container">
+                        <div className="slide-container" key={key}>
                           <img className="slide-image" src={item.url} alt={`slide-${key}`} />
                         </div>
                     </SwiperSlide>
